@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/Logo.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+  <title>Encriptador challenge</title>
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="img/Logo.svg" alt="logo">
+  </header>
+  <main>
+    <div class="encriptar">
+      <textarea name="texto" class="texto" id="texto" cols="30" rows="10"
+        placeholder="Ingresa el texto aquí"></textarea>
+
+      <div class="terminos">
+        <img src="img/alerta.svg" alt="aleta">
+        <p>Solo letras minúsculas y sin acentos.</p>
+      </div>
+      <div class="botones">
+        <button class="btn-encriptar" type="button" onclick="encriptar()">
+          Encriptar
+        </button>
+        <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar
+        </button>
+      </div>
+    </div>
+    <div class="resultados">
+      <img src="img/Muñeco.svg" alt="" id="muñeco" />
+      <div class="oculto resultado-encriptado" id="contenedor-resultado">
+        <p id="parrafo-resultado">
+          ????
+        </p>
+        <button class="btn-copiar" type="button" onclick="copiar()">copiar</button>
+      </div>
+      <div class="mensaje-encriptado" id="mensaje-encriptado">
+        <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+        <p id="parrafo">
+          Ingresa el texto que deseas encriptar o desencriptar
+        </p>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
